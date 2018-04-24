@@ -68,19 +68,19 @@ void vendor_load_properties()
     radio = GetProperty("ro.boot.radio", "");
     if (radio == "0x1") {
         /* xt1021 */
-        property_override("ro.product.device", "condor_umts");
-        property_override("ro.build.product", "condor_umts");
-        property_override("ro.build.description", "condor_reteu-user 5.1 LPC23.13-34.8 9 release-keys");
-        property_override("ro.build.fingerprint", "motorola/condor_reteu/condor_umts:5.1/LPC23.13-34.8/9:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.product.device", "condor_umts");
+        property_override_dual("ro.build.product", "ro.vendor.build.product", "condor_umts");
+        property_override_dual("ro.build.description", "ro.vendor.build.description", "condor_reteu-user 5.1 LPC23.13-34.8 9 release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/condor_reteu/condor_umts:5.1/LPC23.13-34.8/9:user/release-keys");
         property_set("ro.mot.build.customerid", "reteu");
         property_set("ro.telephony.default_network", "0");
         property_set("persist.radio.multisim.config", "");
     } else if (radio == "0x5") {
         /* xt1022 */
-        property_override("ro.product.device", "condor_umtsds");
-        property_override("ro.build.product", "condor_umtsds");
-        property_override("ro.build.description", "condor_retaildsds-user 5.1 LPC23.13-34.8 12 release-keys");
-        property_override("ro.build.fingerprint", "motorola/condor_retaildsds/condor_umtsds:5.1/LPC23.13-34.8/12:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.product.device", "condor_umtsds");
+        property_override_dual("ro.build.product", "ro.vendor.build.product", "condor_umtsds");
+        property_override_dual("ro.build.description", "ro.vendor.build.description", "condor_retaildsds-user 5.1 LPC23.13-34.8 12 release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/condor_retaildsds/condor_umtsds:5.1/LPC23.13-34.8/12:user/release-keys");
         property_set("ro.mot.build.customerid", "retaildsdsall");
         property_set("ro.telephony.default_network", "0,1");
         property_set("ro.telephony.ril.config", "simactivation,sim2gsmonly");
@@ -89,10 +89,10 @@ void vendor_load_properties()
         property_set("persist.radio.plmn_name_cmp", "1");
     } else if (radio == "0x6") {
         /* xt1023 */
-        property_override("ro.product.device", "condor_umts");
-        property_override("ro.build.product", "condor_umts");
-        property_override("ro.build.description", "condor_retuaws-user 5.1 LPC23.13-34.8 9 release-keys");
-        property_override("ro.build.fingerprint", "motorola/condor_retuaws/condor_umts:5.1/LPC23.13-34.8/9:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.product.device", "condor_umts");
+        property_override_dual("ro.build.product", "ro.vendor.build.product", "condor_umts");
+        property_override_dual("ro.build.description", "ro.vendor.build.description", "condor_retuaws-user 5.1 LPC23.13-34.8 9 release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/condor_retuaws/condor_umts:5.1/LPC23.13-34.8/9:user/release-keys");
         property_set("ro.mot.build.customerid", "retusa_aws");
         property_set("ro.telephony.default_network", "0");
         property_set("persist.radio.multisim.config", "");
