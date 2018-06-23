@@ -10,5 +10,5 @@
   {
     "repository":  "proprietary_vendor_motorola_condor",
     "target_path": "vendor/motorola"
-}
+  }
 ]
