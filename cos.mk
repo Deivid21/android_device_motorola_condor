@@ -4,7 +4,7 @@ $(call inherit-product, device/motorola/condor/full_condor.mk)
 $(call inherit-product, vendor/cos/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_condor
+PRODUCT_NAME := cos_condor
 PRODUCT_DEVICE := condor
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
